@@ -13,43 +13,87 @@ Released under the MIT license: http://jsbin.mit-license.org
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Liam Söderström</title>
-  
-        
 
-
-
-  
 <style id="jsbin-css">
 body{
   background-color: rgb(238,231,221);
   font-family: "Times New Roman", Times, Fantasy, serif;
 }
 
-header {
-  background-color: rgb(238,231,221);
-  padding: px;
-  text-align: center; 
-  font-size: 12px; 
+.left-text {
+  float: left; 
+  width: 10%;
 }
 
+.right-text {
+  float: right;
+  width: 10%;
+  text-align: right;
+}
+
+header {
+  background-color: rgb(238,231,221);
+  text-align: center; 
+  font-size: 12px;
+  border-bottom:1px solid #000;
+}
+
+.header_text{
+  font-weight: normal
+  border-bottom: 1px solid #000;
+}
 .text{
   padding: 10%;
 }
 
+
+.flex-container {
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.half-flex-container {
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+}
+
+
+.flex-item {
+  padding: 3%;
+  border: 1px solid #000;
+}
 </style>
 </head>
    
 <body>
+<p class="left-text">This is a paragraph of text. </p>  
+<p class="right-text">This is a paragraph of text.</p>
   
 <header>
     <h1>Liam Söderström</h1>
-    <h2>Aspiaring AI  Developer</h2>
+  <div class = header_text>
+    <h3>Aspiaring AI  Developer</h3>
+  </div>
 </header>
   
+  <img src="https://github.com/LiamSoderstrom/Webprofile/blob/9b04396f4bba1575d075d48601543a39612104bf/240309T205302qw-1.jpg" height="100%" alt="Author Image">
+  
   <div class = "text">
-  <p>Jag är 23år gammal och studerar Ai utveckling i Python på Jensen yrkeshögskola. Utöver detta utvecklar jag ett brädspel med datorsimulerning och virituella hjälpmedel.   </>
     
-
+    <div class = "flex-container">
+      <div class = "flex-item">
+        <h3> Om mig </h3>
+        <p>Jag är 23år gammal och studerar Ai utveckling i Python på Jensen yrkeshögskola. Utöver detta utvecklar jag ett brädspel med datorsimulerning och virituella hjälpmedel.   </>
+      </div>
+   <div class = "half-flex-container">
+      <div class = "flex-item">
+        <h3> Om mig </h3>
+        <p>Jag är 23år gammal och studerar Ai utveckling i Python på Jensen yrkeshögskola. Utöver detta utvecklar jag ett brädspel med datorsimulerning och virituella hjälpmedel.   </>
+    
   </div>
 </body>
 </html>
