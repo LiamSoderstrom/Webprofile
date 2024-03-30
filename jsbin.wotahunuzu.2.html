@@ -3,7 +3,7 @@
 Created using JS Bin
 http://jsbin.com
 
-Copyright (c) 2024 by anonymous (http://jsbin.com/wotahunuzu/2/edit)
+Copyright (c) 2024 by anonymous (http://jsbin.com/qehodoyedu/2/edit)
 
 Released under the MIT license: http://jsbin.mit-license.org
 -->
@@ -22,12 +22,12 @@ body{
 
 .left-text {
   float: left; 
-  width: 10%;
+  width: 10vw;
 }
 
 .right-text {
   float: right;
-  width: 10%;
+  width: 10vw;
   text-align: right;
 }
 
@@ -42,27 +42,44 @@ header {
   font-weight: normal
   border-bottom: 1px solid #000;
 }
+
+footer {
+  background-color: rgb(238,231,221);
+  text-align: center; 
+  font-size: 12px;
+  border-bottom:1px solid #000;
+}
+
+.container{
+  width: 20%;
+  flex-wrap: wrap;
+}
+.footer_text{
+  font-weight: normal
+  border-top: 1px solid #000;
+}
+
 .text{
-  padding: 10%;
+  padding: 10vw;
 }
 
 
-.flex-container {
+.flex-box {
   display: flex; 
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 100vw;
 }
 
-.half-flex-container {
+.half-flex-box {
   display: flex; 
   justify-content: space-between;
   align-items: center;
-  width: 50%;
+  width: 50vw;
 }
-
 
 .flex-item {
+  align-items: center;
   padding: 3%;
   border: 1px solid #000;
 }
@@ -81,19 +98,29 @@ header {
 </header>
   
   <img src="https://github.com/LiamSoderstrom/Webprofile/blob/9b04396f4bba1575d075d48601543a39612104bf/240309T205302qw-1.jpg" height="100%" alt="Author Image">
-  
+  <ul class = "container">
   <div class = "text">
-    
-    <div class = "flex-container">
-      <div class = "flex-item">
-        <h3> Om mig </h3>
-        <p>Jag är 23år gammal och studerar Ai utveckling i Python på Jensen yrkeshögskola. Utöver detta utvecklar jag ett brädspel med datorsimulerning och virituella hjälpmedel.   </>
+      <div class = "flex-box">
+        <div class = "flex-item">
+          <h3> Om mig </h3>
+          <p>Jag är 23år gammal och studerar Ai utveckling i Python på Jensen yrkeshögskola. Utöver detta utvecklar jag ett brädspel med datorsimulerning och virituella hjälpmedel.   </>
+        </div>
       </div>
-   <div class = "half-flex-container">
-      <div class = "flex-item">
-        <h3> Om mig </h3>
-        <p>Jag är 23år gammal och studerar Ai utveckling i Python på Jensen yrkeshögskola. Utöver detta utvecklar jag ett brädspel med datorsimulerning och virituella hjälpmedel.   </>
-    
-  </div>
+      <div class = "flex-box">
+        <div class = "flex-item">
+          <h3> Om mig </h3>
+          <p>Jag är 23år gammal och studerar Ai utveckling i Python på Jensen yrkeshögskola. Utöver detta utvecklar jag ett brädspel med datorsimulerning och virituella hjälpmedel.   </>
+        </div>
+      </div>
+          
+
+     
+  </ul>
+        
+
 </body>
+     <footer>
+    <h1>Contact me</h1>
+  <div class = foter_text>
+    <h3>Aspiaring AI  Developer</h3>
 </html>
