@@ -3,7 +3,7 @@
 Created using JS Bin
 http://jsbin.com
 
-Copyright (c) 2024 by anonymous (http://jsbin.com/qolidaweni/1/edit)
+Copyright (c) 2024 by anonymous (http://jsbin.com/jolumevito/1/edit)
 
 Released under the MIT license: http://jsbin.mit-license.org
 -->
@@ -24,6 +24,7 @@ body{
 .left-text {
   float: left; 
   width: 10vw;
+  font-size: 48px
 }
 
 .right-text {
@@ -48,8 +49,8 @@ header {
   text-align: center
 }
 .picture{
-  padding-top: 1%;
-  max-width: 50%;
+  padding-top: 1vh;
+  max-width: 50vw;
   height: auto;
 }
 
@@ -57,11 +58,6 @@ header {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  
-}
-.footer_text{
-  border-top: 1px solid #000;
-  font-weight: normal;
 }
 
 .text{
@@ -74,6 +70,7 @@ header {
   justify-content: space-between;
   align-items: center;
   width: 100vw;
+  padding-bottom: 1vh;
 }
 
 .half-flex-box {
@@ -83,28 +80,38 @@ header {
   width: 50vw;
 }
 
+
 .flex-item {
-  align-items: center;
+  text-align: center;
   padding: 5%;
   border: 1px solid #000;
 }
 
-footer {
-  background-color: rgb(238,231,221);
-  text-align: center; 
-  font-size: 12px;
-  border-bottom:1px solid #000;
+ul{
+  list-style-type: none;
+  text-align: center;
 }
 
-.footer_text{
-  font-weight: normal
+footer {
+  background-color: rgb(238,231,221);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex: wrap;
+  column-gap:20vw;
+  font-size: 12px;
   border-top: 1px solid #000;
 }
+footer a {
+  margin-top: 1vh
+}
+
 </style>
 </head>
    
 <body>
-<p class="left-text">This is a paragraph of text. </p>  
+<p class="left-text">M </p>  
 <p class="right-text">This is a paragraph of text.</p>
   
 <header>
@@ -120,20 +127,45 @@ footer {
       <li class = "flex-box">
         <div class = "flex-item">
           <h3> About Me </h3>
-          <p> I am Liam Söderström, training to become an AI developer. Fascinated by the potential of AI solutions, particularly in complex problem environments involving adversaries, I aim to contribute to technological advancements while honing my skills at the forefront of this emerging sector. Drawing from experience in system administration, client computers, and game development, I bring a diverse skill set to my role. Proficient in Python class implementation and versed in design patterns like the Observer Pattern and Protocol, I navigate Linux development environments with ease, poised to make meaningful contributions to the field.
+          <p> My name is Liam Söderström, and I am deeply passionate about analyzing problems and solving them through data-oriented approaches. Currently, I am currently studying AI development and Python programming, eager to expand my knowledge and expertise in these fields. Looking ahead, I am excited about the prospect of securing an internship opportunity, where I can apply my skills in a real-world setting, understand how theory is applied in a work environment and further develop my capabilities. Ultimately, I am committed to pursuing a career path where I can continue to innovate, problem-solve, and be part of an expanding tech sector.
       </li>
       <li class = "flex-box">
         <div class = "flex-item">
-          <h3> Om mig </h3>
+          <h3> What do I know</h3>
+          <p>
+
         </div>
       </li>
-          
+      <li class = "flex-box">
+        <div class = "flex-item">
+          <h3> Send me a message</h3>
+          <form action = <a href = "mailto:liamsoderstrom5@gmail.com" method = "Post" enctype = "text/plain">
+          <ul>
+            <li>
+              <label for = "name_box">Name</label>
+            </li>
+            <li>
+              <input type = "text" id = "name_box">
+            </li>
+            <li>
+              <label for = "text_box">Text</label>
+            </li>
+            <li>
+          <input type = "text" id = "text_box">   
+            </li>
+            <li>
+          <input type = "submit" value = "submit"
+            </li>
+          </ul>
 
+        </div>
+      </li>
   </ul>
 
 <footer>
-  <div class = footer_text>
-    </div>
+  <p> Telephone number: +46722326996 </p>
+  <a href="https://www.linkedin.com/in/liam-s%C3%B6derstr%C3%B6m-a948b72b2/">Linkedin</a>
+  <p> Publiced: 2024 </p>
 </footer>        
 </body>
 
