@@ -3,7 +3,7 @@
 Created using JS Bin
 http://jsbin.com
 
-Copyright (c) 2024 by anonymous (http://jsbin.com/jolumevito/1/edit)
+Copyright (c) 2024 by anonymous (http://jsbin.com/dojilozadi/1/edit)
 
 Released under the MIT license: http://jsbin.mit-license.org
 -->
@@ -13,7 +13,8 @@ Released under the MIT license: http://jsbin.mit-license.org
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Liam Söderström</title>
-
+  <style>
+  </style>
 <style id="jsbin-css">
 body{
   background-color: rgb(238,231,221);
@@ -60,36 +61,63 @@ header {
   flex-wrap: wrap;
 }
 
+.box-container{
+  display: flex; 
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+}
+
 .text{
   padding: 10vw;
 }
 
-
 .flex-box {
   display: flex; 
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   width: 100vw;
   padding-bottom: 1vh;
+  text-align: center;
+  padding: 5%;
+  border: 1px solid #000
+}
+
+
+
+.half-flex-box {
+  display: flex; 
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 50% ;
+  padding: 5%;
+  border: 1px solid #000;
+  box-sizing: border-box;
 }
 
 .half-flex-box {
   display: flex; 
-  justify-content: space-between;
+  justify-content: center;
+  text-align: center;
   align-items: center;
-  width: 50vw;
+  max-width: 50%;
+  width: auto;
+  padding: 5%;
+  border: 1px solid #000;
+  box-sizing: border-box;
 }
 
 
 .flex-item {
   text-align: center;
   padding: 5%;
-  border: 1px solid #000;
+  
 }
 
 ul{
   list-style-type: none;
   text-align: center;
+  padding: 0
 }
 
 footer {
@@ -109,64 +137,116 @@ footer a {
 
 </style>
 </head>
-   
 <body>
-<p class="left-text">M </p>  
-<p class="right-text">This is a paragraph of text.</p>
+  <p class="left-text">M </p>  
+  <p class="right-text">This is a paragraph of text.</p>
   
-<header>
+  <header>
     <h1>Liam Söderström</h1>
-  <div class = header_text>
-    <h3>Aspiaring AI  Developer</h3>
-  </div>
-</header>
+    <div class="header_text">
+      <h3>Aspiring AI Developer</h3>
+    </div>
+  </header>
+  
   <div class="picture_container">
-  <img src="https://github.com/LiamSoderstrom/Webprofile/blob/main/240309T205302qw-1.jpg?raw=True" alt="Author Image" class="picture">
+    <img src="https://github.com/LiamSoderstrom/Webprofile/blob/main/240309T205302qw-1.jpg?raw=True" alt="Author Image" class="picture">
   </div>
-  <ul class = "container">
-      <li class = "flex-box">
-        <div class = "flex-item">
-          <h3> About Me </h3>
-          <p> My name is Liam Söderström, and I am deeply passionate about analyzing problems and solving them through data-oriented approaches. Currently, I am currently studying AI development and Python programming, eager to expand my knowledge and expertise in these fields. Looking ahead, I am excited about the prospect of securing an internship opportunity, where I can apply my skills in a real-world setting, understand how theory is applied in a work environment and further develop my capabilities. Ultimately, I am committed to pursuing a career path where I can continue to innovate, problem-solve, and be part of an expanding tech sector.
-      </li>
-      <li class = "flex-box">
-        <div class = "flex-item">
-          <h3> What do I know</h3>
-          <p>
-
-        </div>
-      </li>
-      <li class = "flex-box">
-        <div class = "flex-item">
-          <h3> Send me a message</h3>
-          <form action = <a href = "mailto:liamsoderstrom5@gmail.com" method = "Post" enctype = "text/plain">
-          <ul>
-            <li>
-              <label for = "name_box">Name</label>
-            </li>
-            <li>
-              <input type = "text" id = "name_box">
-            </li>
-            <li>
-              <label for = "text_box">Text</label>
-            </li>
-            <li>
-          <input type = "text" id = "text_box">   
-            </li>
-            <li>
-          <input type = "submit" value = "submit"
-            </li>
-          </ul>
-
-        </div>
-      </li>
+  
+  <ul class="container">
+    <li class="flex-box">
+      <ul>
+        <li>
+          <h3>About Me</h3>
+        </li>
+        <li>
+          <p>My name is Liam Söderström, and I am deeply passionate about analyzing problems and solving them through data-oriented approaches. Currently, I am currently studying AI development and Python programming, eager to expand my knowledge and expertise in these fields. Looking ahead, I am excited about the prospect of securing an internship opportunity, where I can apply my skills in a real-world setting, understand how theory is applied in a work environment and further develop my capabilities. Ultimately, I am committed to pursuing a career path where I can continue to innovate, problem-solve, and be part of an expanding tech sector.</p>
+        </li>
+        <li>
+          <h4>If You Want to See My Resume</h4>
+        </li>
+        <li>
+           <a href="https://github.com/LiamSoderstrom/Webprofile/blob/main/Cv.Liam_S%C3%B6derstr%C3%B6m.png">CV download</a>
+        </li>
+      </ul>
+    </li>
+    
+    <li class="flex-box">
+      <ul>
+        <li>
+          <h3>What do I Know</h3>
+        </li>
+        <li>
+          <h4>Python</h4>
+        </li>
+        <li>
+          <p>Through my tasks, I have developed my knowledge in a Linux development environment on how I perform my role as a developer. Firstly, I have attained a good understanding of Python class implementation, which is how a Python class is created and what it consists of. Additionally, I have become acquainted with various design patterns such as the Observer Pattern and Protocol, which have strengthened my ability to create code structures, with knowledge of how nominal and structural syntaxes work.</p>
+        </li>
+        <li>
+          <h4>Web Development</h4>
+        </li>
+        <li>
+          <p>I have experience in creating basic websites with HTML and CSS, in addition to experience in handling Flask API extension to back end servers and databases. With further experience in dealing with client-side work environments, networking, and server maintenance.</p>
+        </li>
+        <li>
+          <h4>AI</h4>
+        </li>
+        <li>
+          <p>With a fundamental theoretical background in AI, I have continued to apply theory in practice with Pytorch, scikit-learn, and then Tensorflow. With these tools, I have gone from creating tensors to non-linear neural networks able to identify labeled 2D pictures.</p>
+        </li>
+      </ul>
+    </li>
+    
+    <li class="flex-box">
+      <h3>My Work on Github</h3>
+    </li>
+    
+    <li class="half-flex-box">
+      <ul>
+        <li>
+          <h3>Send me a message</h3>
+          <
+        </li>
+      </ul>
+    </li>
+    
+    <li class="half-flex-box">
+      <ul>
+        <li>
+          <h3>Send Me a Message</h3>
+        </li>
+      </ul>
+    </li>
+    
+    <li class="flex-box">
+      <form action="mailto:liam.soderstrom@bahnhof.se" method="post" enctype="text/plain">
+        <ul>
+          <li>
+            <h3>Send me a message</h3>
+          </li>
+          <li>
+            <label for="name_box">Name</label>
+          </li>
+          <li>
+            <input type="text" id="name_box">
+          </li>
+          <li>
+            <label for="text_box">Text</label>
+          </li>
+          <li>
+            <input type="text" id="text_box">
+          </li>
+          <li>
+            <input type="submit" value="Submit">
+          </li>
+        </ul>
+      </form>
+    </li>
   </ul>
-
-<footer>
-  <p> Telephone number: +46722326996 </p>
-  <a href="https://www.linkedin.com/in/liam-s%C3%B6derstr%C3%B6m-a948b72b2/">Linkedin</a>
-  <p> Publiced: 2024 </p>
-</footer>        
+  
+  <footer>
+    <p>Telephone number: +46722326996</p>
+    <a href="https://www.linkedin.com/in/liam-s%C3%B6derstr%C3%B6m-a948b72b2/">LinkedIn</a>
+    <p>Published: 2024</p>
+  </footer>
 </body>
-
 </html>
